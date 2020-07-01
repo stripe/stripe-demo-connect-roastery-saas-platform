@@ -1,0 +1,41 @@
+{
+  "users": [
+    {
+      "userId": "Igj-hMfQa",
+      "platformId": "Igj-hMfQa123",
+      "firstName": "Wade",
+      "lastName": "Warren",
+      "email": "shop@missioncoffee.com",
+      "password": "$2b$10$fDU/gKP8pL5LeozB3WBodu/zJodwplgqqAk2xkMYavFGHCcJ0/IEi",
+      "avatar": "/static/profile.png"
+    }
+  ],
+  "platforms": [
+    {
+      "platformId": "Igj-hMfQa123",
+      "ownerUserId": "Igj-hMfQa",
+      "name": "Mission Coffee Co.",
+      "address": "1880 Mission St",
+      "city": "San Francisco",
+      "state": "CA",
+      "zip": "98104",
+      "phone": "414-208-2194",
+      "email": "shop@missioncoffee.com",
+      "slug": "mission-coffee",
+      "description": "Founded in 2020, Mission Coffee Co is a B corp with several competition awards in the bag, including gold in both the World Barista Championship and World Cup Tasting championships.",
+      "stripe": {
+        "stripeUserId": "acct_1GvbA9H7EIc3xp2a"
+      }
+    }
+  ],
+  "transactions": [
+    {
+      "id": "K6CbdZzD",
+      "listingId": "10",
+      "bookingUserId": "Igj-hMfQa",
+      "totalAmount": "19140",
+      "currency": "USD"
+    }
+  ],
+  "listings": []
+}
