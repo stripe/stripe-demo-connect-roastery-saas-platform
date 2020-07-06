@@ -35,7 +35,7 @@ class Home extends React.Component {
               to build a SaaS platfrom.{' '}
               <a
                 className="github arrow"
-                href="https://github.com/stripe/stripe-demo-connect-standard-saas-platform"
+                href="https://github.com/stripe/stripe-demo-connect-roastery-saas-platform"
                 target="_blank"
               >
                 View on GitHub
