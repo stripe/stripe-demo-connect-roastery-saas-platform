@@ -16,18 +16,6 @@ class DashboardHeader extends Component {
     let {profile, platform} = this.props;
     let avatarUrl = profile ? profile.avatar : '/static/avatar.png';
 
-    let formattedBalance = '';
-
-    if (this.props.balance && this.props.balance) {
-      const locale = new Intl.NumberFormat().resolvedOptions().locale;
-      const formatter = new Intl.NumberFormat(locale, {
-        style: 'currency',
-        currency: this.props.balance.currency,
-      });
-
-      formattedBalance = formatter.format(this.props.balance.amount / 100);
-    }
-
     return (
       <div className="dashboard-header">
         <div className="bg-overlay"></div>

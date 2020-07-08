@@ -13,7 +13,6 @@ class Profile extends React.Component {
   static async getInitialProps(context) {
     return {
       profile: await API.makeRequest('get', '/api/profile'),
-      balance: await API.makeRequest('get', '/api/profile/balance'),
     };
   }
 
