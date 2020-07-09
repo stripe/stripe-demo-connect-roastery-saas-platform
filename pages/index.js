@@ -18,7 +18,7 @@ class Home extends React.Component {
               <h1>Manage your coffee roastery with ease.</h1>
               <h2>
                 Roastery is a Stripe demo that is using Stripe Connect to power
-                a SaaS platfrom for coffee roasters.
+                a SaaS platform for coffee roasters.
               </h2>
               <Link href="/signup">
                 <a className="btn btn-primary">Get started</a>

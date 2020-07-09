@@ -11,7 +11,7 @@ export default function StripeBanner(props) {
         <a href="https://stripe.com/connect" target="_blank">
           Connect
         </a>{' '}
-        to power a SaaS platfrom for coffee roasters.{' '}
+        to power a SaaS platform for coffee roasters.{' '}
         <a
           className="github arrow"
           href="https://github.com/stripe/stripe-demo-connect-roastery-saas-platform"
