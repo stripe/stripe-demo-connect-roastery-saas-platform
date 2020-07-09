@@ -16,7 +16,7 @@ export default async (req, res) => {
     let products = await stripe.products.list(
       {},
       {
-        stripe_account: stripeUserId,
+        stripeAccount: stripeUserId,
       },
     );
 
@@ -27,7 +27,7 @@ export default async (req, res) => {
         let prices = await stripe.prices.list(
           {limit: 1, product: product.id},
           {
-            stripe_account: stripeUserId,
+            stripeAccount: stripeUserId,
           },
         );
         if (prices.data) {
