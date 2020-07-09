@@ -142,7 +142,8 @@ class DashboardPlatformSettings extends Component {
             </div>
 
             <button type="submit" className="btn-submit btn btn-primary">
-              Update settings
+              Update settings{' '}
+              {this.isFormDisabled ? '(disabled in test mode)' : ''}
             </button>
 
             <p className={`error ${this.state.error && 'show'}`}>
