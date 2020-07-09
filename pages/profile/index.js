@@ -23,11 +23,6 @@ class Profile extends React.Component {
     }
   }
 
-  clearTransactions = async () => {
-    let req = await API.makeRequest('post', '/api/profile/clear_transactions');
-    redirect('/dashboard');
-  };
-
   render() {
     let profile = this.props ? this.props.profile : {};
     let avatarUrl = profile ? profile.avatar : '/avatar.png';
