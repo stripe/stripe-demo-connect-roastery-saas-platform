@@ -1,18 +1,18 @@
-// www/pages/login.js
-
 import {Component} from 'react';
 import API from '../helpers/api';
 import logger from '../helpers/logger';
 import {redirect} from '../utils/redirect';
+import getConfig from 'next/config';
 
 class DashboardPlatformSettings extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      ... props.platform
+      ...props.platform,
     };
 
+    this.isFormDisabled = getConfig().publicRuntimeConfig.isTestMode;
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
@@ -31,7 +31,11 @@ class DashboardPlatformSettings extends Component {
     event.preventDefault();
 
     try {
-      let req = await API.makeRequest('put', `/api/platforms/${this.state.platformId}`, this.state);
+      let req = await API.makeRequest(
+        'put',
+        `/api/platforms/${this.state.platformId}`,
+        this.state,
+      );
       return redirect('/dashboard/settings');
     } catch (err) {
       logger.log('Settings save failed.', err);
@@ -52,6 +56,7 @@ class DashboardPlatformSettings extends Component {
                 name="name"
                 placeholder=""
                 value={this.state.name}
+                disabled={this.isFormDisabled}
                 onChange={this.handleChange}
               />
             </div>
@@ -75,6 +80,7 @@ class DashboardPlatformSettings extends Component {
                 name="address"
                 placeholder=""
                 value={this.state.address}
+                disabled={this.isFormDisabled}
                 onChange={this.handleChange}
               />
             </div>
@@ -88,6 +94,7 @@ class DashboardPlatformSettings extends Component {
                 name="city"
                 placeholder=""
                 value={this.state.city}
+                disabled={this.isFormDisabled}
                 onChange={this.handleChange}
               />
             </div>
@@ -101,10 +108,10 @@ class DashboardPlatformSettings extends Component {
                 name="zip"
                 placeholder=""
                 value={this.state.zip}
+                disabled={this.isFormDisabled}
                 onChange={this.handleChange}
               />
             </div>
-
 
             <div className="form-group">
               <label htmlFor="title">State</label>
@@ -115,6 +122,7 @@ class DashboardPlatformSettings extends Component {
                 name="state"
                 placeholder=""
                 value={this.state.state}
+                disabled={this.isFormDisabled}
                 onChange={this.handleChange}
               />
             </div>
@@ -128,10 +136,10 @@ class DashboardPlatformSettings extends Component {
                 name="description"
                 placeholder=""
                 value={this.state.description}
+                disabled={this.isFormDisabled}
                 onChange={this.handleChange}
               />
             </div>
-
 
             <button type="submit" className="btn-submit btn btn-primary">
               Update settings
