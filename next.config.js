@@ -10,8 +10,6 @@ module.exports = {
 
     return config;
   },
-
-  experimental: {publicDirectory: true},
   serverRuntimeConfig: {},
   publicRuntimeConfig: {
     stripe: {

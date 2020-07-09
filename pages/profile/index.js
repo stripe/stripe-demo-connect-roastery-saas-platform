@@ -30,7 +30,7 @@ class Profile extends React.Component {
 
   render() {
     let profile = this.props ? this.props.profile : {};
-    let avatarUrl = profile ? profile.avatar : '/static/avatar.png';
+    let avatarUrl = profile ? profile.avatar : '/avatar.png';
 
     return (
       <Layout

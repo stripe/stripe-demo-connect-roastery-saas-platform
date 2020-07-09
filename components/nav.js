@@ -8,11 +8,11 @@ class Nav extends React.Component {
   }
 
   render() {
-    let logoSrc = '/static/logo.svg';
+    let logoSrc = '/logo.svg';
     let navClass = 'navbar navbar-fixed navbar-expand-lg';
 
     if (this.props.isDashboard) {
-      logoSrc = '/static/logo_dark.svg';
+      logoSrc = '/logo_dark.svg';
       navClass += ' navbar-light';
     } else {
       navClass += ' navbar-dark';

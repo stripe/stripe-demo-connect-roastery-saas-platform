@@ -41,7 +41,7 @@ class AuthStripeCallback extends React.Component {
         title="Dashboard"
       >
         <div className="">
-          <img src="/static/loader.svg" className="loader" />
+          <img src="/loader.svg" className="loader" />
         </div>
 
         <style jsx>{`

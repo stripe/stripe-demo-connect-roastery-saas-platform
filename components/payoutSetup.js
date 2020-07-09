@@ -1,6 +1,6 @@
-import { Component } from "react";
-import API from "../helpers/api";
-import logger from "../helpers/logger";
+import {Component} from 'react';
+import API from '../helpers/api';
+import logger from '../helpers/logger';
 
 class StripeSetup extends Component {
   constructor(props) {
@@ -10,11 +10,11 @@ class StripeSetup extends Component {
   }
 
   async getRedirectInfo() {
-    return API.makeRequest("post", `/api/payouts/stripe`);
+    return API.makeRequest('post', `/api/payouts/stripe`);
   }
 
   async handleConnect() {
-    logger.log("ProfileStripe.handleConnect");
+    logger.log('ProfileStripe.handleConnect');
     let response = await this.getRedirectInfo();
     let url = response.location;
     if (url) {
@@ -23,19 +23,16 @@ class StripeSetup extends Component {
   }
 
   render() {
-    let signUpLink = "/api/stripe/connect";
+    let signUpLink = '/api/stripe/connect';
 
     return (
       <>
         <div className="stripe-setup">
           <h3>Connect your Stripe account</h3>
-          <p>
-           We are using Stripe to for payments and payouts.
-          </p>
-
+          <p>We are using Stripe to for payments and payouts.</p>
 
           <div className="stripe-box">
-            <img src="/static/stripe_blue.svg" />
+            <img src="/stripe_blue.svg" />
           </div>
 
           <a
@@ -51,9 +48,7 @@ class StripeSetup extends Component {
           </p>
         </div>
         <style jsx>{`
-
           .stripe-setup {
-
           }
 
           .stripe-box {

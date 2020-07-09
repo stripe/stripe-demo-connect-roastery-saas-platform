@@ -15,7 +15,7 @@ const Head = (props) => (
       content={props.description || defaultDescription}
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/svg+xml" href="static/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"

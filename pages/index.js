@@ -23,7 +23,7 @@ class Home extends React.Component {
 
           <div className="annotation">
             <p>
-              <img src="static/stripe.svg" width="60" />
+              <img src="/stripe.svg" width="60" />
               Roastery is a{' '}
               <a className="stripe" href="https://stripe.com">
                 Stripe

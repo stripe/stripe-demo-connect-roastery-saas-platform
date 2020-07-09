@@ -14,7 +14,7 @@ class DashboardHeader extends Component {
 
   render() {
     let {profile, platform} = this.props;
-    let avatarUrl = profile ? profile.avatar : '/static/avatar.png';
+    let avatarUrl = profile ? profile.avatar : '/avatar.png';
 
     return (
       <div className="dashboard-header">

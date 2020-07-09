@@ -15,7 +15,7 @@ class NavProfile extends React.Component {
     let items;
     let avatarUrl = this.props.userProfile
       ? this.props.userProfile.avatar
-      : '/static/avatar.png';
+      : '/avatar.png';
 
     if (this.props.isAuthenticated) {
       items = (

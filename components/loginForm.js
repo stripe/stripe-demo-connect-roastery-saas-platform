@@ -116,13 +116,13 @@ export default class LoginForm extends Component {
           }
 
           .email {
-            background: url(../static/email.svg) no-repeat scroll 7px 6px;
+            background: url(/email.svg) no-repeat scroll 7px 6px;
             background-size: 20px 20px;
             background-position: 16px 14px;
           }
 
           .password {
-            background: url(../static/lock.svg) no-repeat scroll 7px 6px;
+            background: url(/lock.svg) no-repeat scroll 7px 6px;
             background-size: 20px 20px;
             background-position: 16px 14px;
           }

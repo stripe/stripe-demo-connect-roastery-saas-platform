@@ -55,7 +55,7 @@ export default class PlatformHome extends React.Component {
             height: 100%;
             width: 100%;
 
-            background: url(/static/platform_splash.png) no-repeat;
+            background: url(/platform_splash.png) no-repeat;
             background-size: cover;
             background-position: center center;
           }
