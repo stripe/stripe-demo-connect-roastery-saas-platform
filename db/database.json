@@ -3,11 +3,11 @@
     {
       "userId": "Igj-hMfQa",
       "platformId": "Igj-hMfQa123",
-      "firstName": "Wade",
-      "lastName": "Warren",
+      "firstName": "Claudia",
+      "lastName": "Garcia",
       "email": "shop@missioncoffee.com",
       "password": "$2b$10$fDU/gKP8pL5LeozB3WBodu/zJodwplgqqAk2xkMYavFGHCcJ0/IEi",
-      "avatar": "/static/profile.png"
+      "avatar": "https://images.unsplash.com/photo-1511424187101-2aaa60069357?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&s=d2e1a84f397a4f01795661a2bf6f0f01"
     }
   ],
   "platforms": [
@@ -21,7 +21,7 @@
       "zip": "98104",
       "phone": "414-208-2194",
       "email": "shop@missioncoffee.com",
-      "slug": "mission-coffee",
+      "slug": "mission-coffee-co",
       "description": "Founded in 2020, Mission Coffee Co is a B corp with several competition awards in the bag, including gold in both the World Barista Championship and World Cup Tasting championships.",
       "stripe": {
         "stripeUserId": "acct_1GvbA9H7EIc3xp2a"
