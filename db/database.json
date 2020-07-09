@@ -27,15 +27,5 @@
         "stripeUserId": "acct_1GvbA9H7EIc3xp2a"
       }
     }
-  ],
-  "transactions": [
-    {
-      "id": "K6CbdZzD",
-      "listingId": "10",
-      "bookingUserId": "Igj-hMfQa",
-      "totalAmount": "19140",
-      "currency": "USD"
-    }
-  ],
-  "listings": []
+  ]
 }
