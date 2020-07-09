@@ -16,6 +16,10 @@ class Home extends React.Component {
           <div className="container">
             <div className="text">
               <h1>Manage your coffee roastery with ease.</h1>
+              <h2>
+                Roastery is a Stripe demo that is using Stripe Connect to power
+                a SaaS platfrom for coffee roasters.
+              </h2>
               <Link href="/signup">
                 <a className="btn btn-primary">Get started</a>
               </Link>
@@ -37,6 +41,14 @@ class Home extends React.Component {
             font-weight: 600;
             color: #fff;
             width: 70%;
+            margin-bottom: 30px;
+          }
+
+          h2 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #fff;
+            width: 60%;
             margin-bottom: 30px;
           }
 
