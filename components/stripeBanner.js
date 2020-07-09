@@ -11,7 +11,7 @@ export default function StripeBanner(props) {
         <a href="https://stripe.com/connect" target="_blank">
           Connect
         </a>{' '}
-        to build a SaaS platfrom.{' '}
+        to power a SaaS platfrom for coffee roasters.{' '}
         <a
           className="github arrow"
           href="https://github.com/stripe/stripe-demo-connect-roastery-saas-platform"
@@ -52,9 +52,9 @@ export default function StripeBanner(props) {
             color: #a96851;
           }
 
-          @media (min-width: 768px) {
+          @media (min-width: 820px) {
             .annotation {
-              max-width: 700px;
+              max-width: 800px;
               margin-left: auto;
               margin-right: auto;
               bottom: 30px;
