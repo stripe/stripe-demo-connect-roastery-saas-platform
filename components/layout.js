@@ -124,6 +124,10 @@ const Layout = (props) => (
         background: #efac00;
         color: #000;
       }
+      :global(.btn-primary:not(:disabled):not(.disabled):active) {
+        background: #efac00;
+        color: #000;
+      }
 
       :global(.btn-secondary) {
         background: #fff;
