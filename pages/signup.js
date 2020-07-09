@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from '../components/layout';
 import SignupForm from '../components/signupForm';
+import StripeBanner from '../components/stripeBanner';
 
 class Signup extends React.Component {
   render() {
@@ -20,6 +21,7 @@ class Signup extends React.Component {
             </p>
             <SignupForm />
           </div>
+          <StripeBanner />
         </div>
         <style jsx>{`
           .page-signup {

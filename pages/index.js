@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Layout from '../components/layout';
+import StripeBanner from '../components/stripeBanner';
 
 class Home extends React.Component {
   render() {
@@ -21,27 +22,7 @@ class Home extends React.Component {
             </div>
           </div>
 
-          <div className="annotation">
-            <p>
-              <img src="/stripe.svg" width="60" />
-              Roastery is a{' '}
-              <a className="stripe" href="https://stripe.com">
-                Stripe
-              </a>{' '}
-              demo that uses{' '}
-              <a href="https://stripe.com/connect" target="_blank">
-                Connect
-              </a>{' '}
-              to build a SaaS platfrom.{' '}
-              <a
-                className="github arrow"
-                href="https://github.com/stripe/stripe-demo-connect-roastery-saas-platform"
-                target="_blank"
-              >
-                View on GitHub
-              </a>
-            </p>
-          </div>
+          <StripeBanner />
         </div>
         <style jsx>{`
           .home {
@@ -64,50 +45,6 @@ class Home extends React.Component {
             position: relative;
             width: 100%;
             border: 0;
-          }
-
-          .annotation {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            padding: 20px;
-            min-height: 50px;
-
-            background: #fff;
-            text-align: center;
-            font-size: 12px;
-          }
-
-          .annotation img,
-          .annotation a,
-          .annotation p {
-            display: inline-block;
-            margin: 0;
-          }
-
-          .annotation img {
-            margin-right: 10px;
-          }
-
-          .annotation a:link,
-          .annotation a:visited {
-            color: #32325d;
-          }
-
-          @media (min-width: 768px) {
-            .annotation {
-              max-width: 700px;
-              margin-left: auto;
-              margin-right: auto;
-              bottom: 30px;
-              border-radius: 50px;
-              padding: 10px;
-            }
-
-            h1 {
-              font-size: 60px;
-            }
           }
         `}</style>
       </Layout>

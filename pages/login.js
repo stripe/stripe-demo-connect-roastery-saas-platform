@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '../components/layout';
-
+import StripeBanner from '../components/stripeBanner';
 import LoginComponent from '../components/loginForm';
 
 export default class LoginPage extends React.Component {
@@ -18,6 +18,8 @@ export default class LoginPage extends React.Component {
               <LoginComponent />
             </div>
           </div>
+
+          <StripeBanner />
         </div>
         <style jsx>{`
           .login-page {
