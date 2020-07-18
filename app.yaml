@@ -1,5 +1,8 @@
-runtime: nodejs10
+env: standard
+runtime: nodejs12
+service: default
+
 handlers:
-- url: /.*
-  script: auto
-  secure: always
+  - url: /.*
+    secure: always
+    script: auto
