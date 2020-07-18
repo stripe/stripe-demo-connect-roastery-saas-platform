@@ -5,10 +5,7 @@ import storage from '../../../helpers/storage';
 export default async (req, res) => {
   const {email, password} = req.body;
 
-  let userAccount = storage
-    .get('users')
-    .find({email: email})
-    .value();
+  let userAccount = storage.get('users').find({email: email}).value();
 
   let hashedPassword = userAccount.password;
 

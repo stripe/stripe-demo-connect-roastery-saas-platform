@@ -11,7 +11,9 @@ export default class PlatformProductsList extends React.Component {
     this.props = props;
 
     this.stripePromise = loadStripe(publicKey, {
-      stripeAccount: this.props.platform.stripe.stripeUserId,
+      stripeAccount: this.props.platform.stripe
+        ? this.props.platform.stripe.stripeUserId
+        : null,
     });
   }
 
