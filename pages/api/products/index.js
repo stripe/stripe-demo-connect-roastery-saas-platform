@@ -11,7 +11,13 @@ export default requireAuthEndpoint(async (req, res) => {
       .find({ownerUserId: authenticatedUserId})
       .value();
 
-    let stripeUserId = userPlatform.stripe.stripeUserId;
+    let stripeUserId = userPlatform.stripe
+      ? userPlatform.stripe.stripeUserId
+      : null;
+
+    if (!stripeUserId) {
+      throw new Error('No stripe account found');
+    }
 
     let products = await stripe.products.list(
       {},
@@ -23,7 +29,7 @@ export default requireAuthEndpoint(async (req, res) => {
     if (products.data.length) {
       return res.status(200).json(products.data);
     } else {
-      res.status(400).json([]);
+      res.status(400).json(products);
     }
   } catch (err) {
     return res.status(400).json({error: err.message});

@@ -11,7 +11,13 @@ export default async (req, res) => {
       throw new Error('platform not found');
     }
 
-    let stripeUserId = platform.stripe.stripeUserId;
+    let stripeUserId = userPlatform.stripe
+      ? userPlatform.stripe.stripeUserId
+      : null;
+
+    if (!stripeUserId) {
+      throw new Error('No stripe account found');
+    }
 
     let products = await stripe.products.list(
       {},
