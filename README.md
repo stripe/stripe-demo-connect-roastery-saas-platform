@@ -29,7 +29,7 @@ The app renders its React components as both the server and client-side using [i
 - Authentication system using [JWT tokens](https://jwt.io/) with login and signup pages.
 - Storage using [LowDB](https://github.com/typicode/lowdb) to provide a basic local JSON database.
 - REST API scaffolding with authentication endpoints for resources like `listings`, `login`, `payouts`, `profile`, `signup`, `transactions`, and `users`.
-- Card payments are accepted via [Payment Intents API](https://stripe.com/docs/payments/payment-intents) + [Stripe Elements](https://stripe.com/payments/elements) and is integrated via [`react-stripe-elements`](https://github.com/stripe/react-stripe-elements)
+- Card payments are accepted via [Stripe Checkout](http://stripe.com/checkout)
 
 ## Getting started
 
