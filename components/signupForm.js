@@ -54,7 +54,7 @@ class SignupForm extends Component {
               type="text"
               id="platformName"
               name="platformName"
-              placeholder="Platform name"
+              placeholder="Coffee roastery name"
               value={this.state.platformName}
               onChange={this.handleChange}
               required
@@ -104,7 +104,7 @@ class SignupForm extends Component {
             />
 
             <button type="submit" className="btn btn-primary btn-full">
-              Create platform
+              Create account
             </button>
 
             <p className={`error ${this.state.error && 'show'}`}>

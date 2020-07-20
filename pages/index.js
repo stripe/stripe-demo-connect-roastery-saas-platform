@@ -17,11 +17,11 @@ class Home extends React.Component {
             <div className="text">
               <h1>Manage your coffee roastery with ease.</h1>
               <h2>
-                Roastery is a Stripe demo that is using Stripe Connect to power
-                a SaaS platform for coffee roasters.
+                Build your online business. Roastery helps coffee roasters build
+                their online presence and reach more buyers.
               </h2>
               <Link href="/signup">
-                <a className="btn btn-primary">Get started</a>
+                <a className="btn btn-primary">Start today</a>
               </Link>
             </div>
           </div>
