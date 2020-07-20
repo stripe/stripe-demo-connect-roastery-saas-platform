@@ -91,11 +91,11 @@ const Layout = (props) => (
 
         background: linear-gradient(
             0deg,
-            rgba(255, 255, 255, 0) 50%,
-            #ffffff 100%
+            rgba(255, 255, 255, 0) 20%,
+            #000000 100%
           ),
-          url(https://images.unsplash.com/photo-1542349301445-c5f6ec562729?ixlib=rb-1.2.1&auto=format&fit=crop&w=2315&q=80)
-            no-repeat; // Source: https://unsplash.com/photos/wh-7GeXxItI
+          url(https://images.unsplash.com/photo-1508766917616-d22f3f1eea14?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80)
+            no-repeat;
         background-size: cover;
         background-position: center center;
       }
@@ -297,10 +297,10 @@ const Layout = (props) => (
 
         background: linear-gradient(
             0deg,
-            rgba(255, 255, 255, 0) 50%,
+            rgba(255, 255, 255, 0) 15%,
             #000000 100%
           ),
-          url(https://images.unsplash.com/photo-1447933601403-0c6688de566e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3356&q=80)
+          url(https://images.unsplash.com/photo-1508766917616-d22f3f1eea14?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80)
             no-repeat;
         background-size: cover;
         background-position: center center;
