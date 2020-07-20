@@ -52,7 +52,7 @@ class NavProfile extends React.Component {
         <>
           <li className="navitem d-flex">
             <Link href="/signup">
-              <a className="btn">Create platform</a>
+              <a className="btn">Create account</a>
             </Link>
           </li>
 
@@ -70,7 +70,6 @@ class NavProfile extends React.Component {
         {items}
         <style jsx>{`
           :global(.avatar) {
-            border-radius: 44px;
             width: 44px;
             object-fit: cover;
             height: 44px;
