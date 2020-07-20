@@ -23,7 +23,11 @@ class DashboardHeader extends Component {
           <div className="col-12">
             {profile && (
               <div className="media user-details">
-                <img src={avatarUrl} className="mr-3 avatar" />
+                <Link href="/dashboard">
+                  <a>
+                    <img src={avatarUrl} className="mr-3 avatar" />
+                  </a>
+                </Link>
                 <div className="media-body">
                   <div className="user-details-body align-middle">
                     <h5 className="mt-0">{platform.name}</h5>
