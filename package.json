@@ -16,7 +16,7 @@
     "@google-cloud/storage": "^4.2.0",
     "@stripe/stripe-js": "^1.7.0",
     "babel-polyfill": "^6.26.0",
-    "bcrypt": "^3.0.6",
+    "bcrypt": "^5.0.0",
     "dotenv": "^8.2.0",
     "easydb-io": "^1.2.3",
     "express": "^4.17.1",
