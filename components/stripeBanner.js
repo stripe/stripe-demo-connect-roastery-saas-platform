@@ -18,7 +18,7 @@ export default function StripeBanner(props) {
           target="_blank"
         >
           View on GitHub
-        </a>
+        </a>.
       </p>
 
       <style jsx>
