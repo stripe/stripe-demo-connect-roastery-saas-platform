@@ -72,11 +72,11 @@ function DashboardProductsList(props) {
           }
         }
 
-        @media (min-width: 992px) { {
+        @media (min-width: 992px) {
           .products-list {
             grid-template-columns: repeat(3, 1fr);
           }
-        }        
+        }
       `}</style>
     </ul>
   );

@@ -1,3 +1,4 @@
+import React from 'react';
 import Link from 'next/link';
 import {loadStripe} from '@stripe/stripe-js';
 import getConfig from 'next/config';
@@ -120,11 +121,11 @@ export default class PlatformProductsList extends React.Component {
           }
         }
 
-        @media (min-width: 992px) { {
+        @media (min-width: 992px) {
           .products-list {
             grid-template-columns: repeat(3, 1fr);
           }
-        }        
+        }
       `}</style>
       </ul>
     );
