@@ -1,5 +1,5 @@
 env: standard
-runtime: nodejs12
+runtime: nodejs16
 service: default
 
 handlers:
