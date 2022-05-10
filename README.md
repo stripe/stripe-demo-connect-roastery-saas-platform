@@ -51,7 +51,11 @@ The first thing you need to do is to Create a Connect platform. You do that by g
 
 Once you have registered your Connect platform, you can now generate a Connect User Id. You need this together with your Stripe API keys.
 
-**2. Get Stripe API keys and configure environment variables**
+**3. Enable OAuth for Standard
+
+Go to the [Connect settings](https://dashboard.stripe.com/test/settings/connect) and enable OAuth for Standard Accounts. In addition, configure the redirect URIs for your local instance. For example, if you are running this demo locally at http://localhost:3000, you will need to add the following to the Redirects section: http://localhost:3000/stripe/callback
+
+**4. Get Stripe API keys and configure environment variables**
 
 Go to the Stripe [developer dashboard](https://dashboard.stripe.com/apikeys) to find your API keys (developer settings), and your Connect User Id (Connect settings).
 
