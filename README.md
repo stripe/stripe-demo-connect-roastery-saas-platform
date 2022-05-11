@@ -71,6 +71,10 @@ STRIPE_CLIENT_ID=<replace-with-your-connect-client-id>
 
 Save the `.env` file and you should be good.
 
+### Enable OAuth for Standard accounts
+
+In [your account's Connect settings](https://dashboard.stripe.com/test/settings/connect), under OAuth settings, enable "OAuth for Standard accounts". (Without this, you'll get an error when clicking the "Connect Stripe" button.)
+
 ### Using the sample app
 
 1. Run `npm install`
