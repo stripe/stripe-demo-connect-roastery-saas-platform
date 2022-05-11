@@ -1,5 +1,7 @@
 # Roastery demo SaaS platform using Stripe Connect
 
+**NOTE: this demo uses the OAuth method to connect Stripe accounts. For an example that uses the API method, see [Connect Onboarding for Standard accounts](https://github.com/stripe-samples/connect-onboarding-for-standard).**
+
 This sample shows how to build a coffee roastery themed SaaS platform using [Stripe Checkout](http://stripe.com/checkout) and [Stripe Connect](https://stripe.com/connect), where coffee roasteries can signup to get their website and wholesale shop with just a few clicks. The Roastery platform takes an application fee for every transaction happening on the platform.
 
 Platform owners re on-boarded using [Stripe Connect Standard](https://stripe.com/connect) where they connect their existing Stripe account. When the marketplace accepts funds via card payments, the funds are routed to the seller's Stripe accounts as a part of each marketplace transaction.
