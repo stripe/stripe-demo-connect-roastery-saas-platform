@@ -77,6 +77,10 @@ STRIPE_CLIENT_ID=<replace-with-your-connect-client-id>
 
 Save the `.env` file and you should be good.
 
+### Set up Redirect URI
+
+After the user completes the flow to connect their Stripe account, Stripe needs to redirect the user back to your application. You can do this with a `redirect_uri` parameter, but this project does not use that method. Instead, "If no `redirect_uri` is specified in the URL, then Stripe uses the first URI configured in your platform settings" ([source](https://stripe.com/docs/connect/oauth-reference#redirect-uri)). So go to [your Connect settings](https://dashboard.stripe.com/test/settings/connect), and under Integration > Redirects, click "Add URI", and enter `http://localhost:3000/stripe/callback`.
+
 ### Using the sample app
 
 1. Run `npm install`
