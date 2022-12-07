@@ -29,7 +29,7 @@ class StripeSetup extends Component {
       <>
         <div className="stripe-setup">
           <h3>Connect your Stripe account</h3>
-          <p>We are using Stripe to for payments and payouts.</p>
+          <p>We are using Stripe for payments and payouts.</p>
 
           <div className="stripe-box">
             <img src="/stripe_blue.svg" />
